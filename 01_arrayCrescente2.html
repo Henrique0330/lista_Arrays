@@ -5,10 +5,21 @@
 
     //ENTRADA
 
+    const N1 = Number(prompt("Insira um número inteiro NÚMERO(1)").trim());
+    const N2 = Number(prompt("Insira um número inteiro NÚMERO(2)").trim());
 
     //PROCESSAMENTO
 
+    let arrayVazio = [];
+    if(N1 > N2){
+        arrayVazio = [N2, N1];
+    }
+    else {
+        arrayVazio = [N1, N2];
+    }
 
     //SAÍDA
-    
+
+    alert(`Os elementos no array são: ${arrayVazio.join(" , ")}.`);
+
 </script>

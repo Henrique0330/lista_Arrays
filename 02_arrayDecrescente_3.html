@@ -5,9 +5,22 @@
 
     //ENTRADA
 
-
+    const N1 = Number(prompt("Insira um número inteiro NÚMERO(1)").trim());
+    const N2 = Number(prompt("Insira um número inteiro NÚMERO(2)").trim());
+    const N3 = Number(prompt("Insira um número inteiro NÚMERO(3)").trim());
+    
     //PROCESSAMENTO
 
+    let arrayVazio = [];
+    if(N1 > N2 > N3){
+        arrayVazio = [N3, N2, N1];
+    }
+    else {
+        arrayVazio = [N1, N2, N3];
+    }
+    
+    
+    
 
     //SAÍDA
 
