@@ -5,23 +5,32 @@
 
     //ENTRADA
 
-    const N1 = Number(prompt("Insira um número inteiro NÚMERO(1)").trim());
-    const N2 = Number(prompt("Insira um número inteiro NÚMERO(2)").trim());
-    const N3 = Number(prompt("Insira um número inteiro NÚMERO(3)").trim());
+    const N1 = Number(prompt("Insira o primeiro número").trim());
+    const N2 = Number(prompt("Insira o segundo número").trim());
+    const N3 = Number(prompt("Insira o terceiro número").trim());
     
     //PROCESSAMENTO
 
     let arrayVazio = [];
-    if(N1 > N2 > N3){
+    if(N3 > N2 && N2 > N1){
         arrayVazio = [N3, N2, N1];
     }
-    else {
-        arrayVazio = [N1, N2, N3];
+    else if(N2 > N1 && N1 > N3){
+        arrayVazio = [N2, N1, N3]
+    }
+    else if(N1 > N2 && N2 > N3){
+        arrayVazio = [N1, N2, N3]
+    }
+    else if (N3 > N1 && N1 > N2){
+        arrayVazio = [N3, N1, N2]
     }
     
+
     
-    
+       
 
     //SAÍDA
+
+    alert(`Os elementos no array são: ${arrayVazio}`)
 
 </script>
