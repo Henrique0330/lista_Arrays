@@ -9,19 +9,22 @@
 
     //ENTRADA
 
-    const N1 = prompt("Insira a primeira fruta'").trim();
-    const N2 = prompt("Insira a segunda fruta").trim();
-    const N3 = prompt("Insira a terceira fruta").trim();
-    const N4 = prompt("Insira uma primeira bebida").trim();
-    const N5 = prompt("Insira a segunda bebida").trim();
-    const N6 = prompt("Insira a terceira bebida ").trim();
+    const F1 = prompt("Insira a primeira fruta para a lista de compras").trim();
+    const F2 = prompt("Insira a segunda fruta para a lista de compras").trim();
+    const F3 = prompt("Insira a terceira fruta para a lista de compras").trim();
+    const B1 = prompt("Insira a primeira bebida para a lista de compras").trim();
+    const B2 = prompt("Insira a segunda bebida para a lista de compras").trim();
+    const B3 = prompt("Insira a terceira bebida para a lista de compras").trim();
 
     //PROCESSAMENTO
 
-    let arrayFrutas = []
-    arrayFrutas.join = (``)
-    arrayBebidas.join = (``)
-    
+    let arrayFrutas = [F1, F2, F3];
+    let arrayBebidas = [B1, B2, B3]
+    alert(`As frutas a serem compradas são: ${arrayFrutas.join(" , ")}`)
+    alert(`As bebidas a serem compradas são: ${arrayBebidas.join(" , ")}`)
+    alert(`A lista completa de compras é: ${arrayFrutas.concat(arrayBebidas).join(" , ")}`)
+
+
 
     //SAÍDA
 

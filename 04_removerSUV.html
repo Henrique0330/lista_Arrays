@@ -7,9 +7,15 @@
 
     //ENTRADA
 
+    let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
+    const carros = prompt("Qual carro você deseja tirar da lista:" + carrosSUV.join(" , "));
 
     //PROCESSAMENTO
-
+  
+    const posição = carrosSUV.indexOf(carros);
+    alert(`A lista antiga possui: ${carrosSUV.join(", ")}`)
+    carrosSUV.splice(posição, 1)
+    alert(`A nova lista possui: ${carrosSUV.join(", ")}`)
 
     //SAÍDA
 

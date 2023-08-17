@@ -11,13 +11,22 @@
 
     //ENTRADA
 
+    const nomeCores = ["Azul", "Amarelo", "Verde", "Branco", "Preto", "Marrom", "Cinza"];
+    const corInformada = prompt(`Informe uma cor: ${nomeCores.join(", ")}`).toLocaleLowerCase();
 
     //PROCESSAMENTO
 
+    const sorte = Math.floor(Math.random() * 7);
+    const posicaoCor = nomeCores.indexOf(corInformada); 
 
     //SAÍDA
 
-
+if (sorte == posicaoCor){
+    alert(`PARABENS! VOCÊ ESTÁ COM SORTE NA COR ${corInformada}!`)
+}
+else {
+    alert(`Não foi dessa vez... Tente novamente!`)
+}
 
     /*
     Para gerar números aleatórios, há a função random, da biblioteca Math. Nesse caso, o comando deverá ser o Math.random().

@@ -11,10 +11,31 @@
 
     //ENTRADA
 
+    let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
+    let cassosSedan = ["Civic", "Corolla", "Arizzo", "Fusion"];
+    let carrosHatch = ["308", "Focus", "i30"];
+    const veiculo1 = prompt("Insira o nome do veículo para adicionar na lista");
+    const tipo1 = prompt("Insira qual tipo de veiculo que deseja inserir: 1-SUV, 2-Sedan, 3-Hatch")
+    const veiculo2 = prompt("Insira o nome do veículo para adicionar na lista");
+    const tipo2 = prompt("Insira qual tipo de veiculo que deseja inserir: 1-SUV, 2-Sedan, 3-Hatch")
+    const veiculo3 = prompt("Insira o nome do veículo para adicionar na lista");
+    const tipo3 = prompt("Insira qual tipo de veiculo que deseja inserir: 1-SUV, 2-Sedan, 3-Hatch")
 
     //PROCESSAMENTO
+    if (tipo1 == 1) carrosSUV.push(veiculo1);
+    else if (tipo1 == 2) cassosSedan.push(veiculo1);
+    else if (tipo1 == 3) carrosHatch.push(veiculo1);
 
+    if (tipo2 == 1) carrosSUV.push(veiculo2);
+    else if (tipo2 == 2) cassosSedan.push(veiculo2);
+    else if (tipo2 == 3) carrosHatch.push(veiculo2);
+
+    if (tipo3 == 1) carrosSUV.push(veiculo3);
+    else if (tipo3 == 2) cassosSedan.push(veiculo3);
+    else if (tipo3 == 3) carrosHatch.push(veiculo3);
 
     //SAÍDA
-
+    alert(`A lista de veículos SUV possui: ${carrosSUV.join(", ")}`);
+    alert(`A lista de veículos Sedan possui: ${cassosSedan.join(", ")}`);
+    alert(`A lista de veículos Hatch possui: ${carrosHatch.join(", ")}`);
 </script>
