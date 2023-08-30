@@ -7,12 +7,15 @@
 
     //ENTRADA
 
-    const palavra = prompt(`Informe uma palavra:`).toLocaleUpperCase();
-    const letra = prompt(`Informe uma letra para procurar na palavra:`).toLocaleUpperCase();
+    let palavra = prompt("Insira uma palavra aleatória:").trim();
+    const letra = prompt("Insira uma letra que deseja encontrar na palavra que acabou de digitar:").trim();
 
     //PROCESSAMENTO
-
-
-    //SAÍDA
-
+    const casaPalavra = palavra.search(letra);
+    if (casaPalavra == -1) {
+        alert(`A letra ${letra} não foi encontrada no termo inserido: ${palavra}`);
+    }
+    else if (casaPalavra >= 0) {
+        alert(`A letra digitada existe na palavra! posição da letra na palavra: ${casaPalavra}`);
+    }
 </script>
